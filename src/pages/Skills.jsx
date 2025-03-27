@@ -2,10 +2,10 @@ import IconRender from "../components/atoms/IconRender";
 import data from "../constants/skills.json";
 export default function Skills() {
   return (
-    <main className=" over h-screen  flex justify-center items-center">
+    <main className=" over h-screen  flex justify-center items-center mb-25">
       <section className="container mx-auto bg-supcolor p-5 max-sm:pt-2 rounded-xl lg:w-2/4 md:w-full max-sm:w-full ">
         <div className="flex justify-center items-center pb-3 max-sm:pb-1">
-          <h1 className="text-4xl max-sm:text-2xl font-mono text-primary font-bold">
+          <h1 className="text-4xl max-sm:text-2xl font-mono text-primary font-bold mt-5">
             Skills
           </h1>
         </div>

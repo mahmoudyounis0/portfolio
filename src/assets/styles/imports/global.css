@@ -18,6 +18,10 @@ body {
   font-family: "Space Mono", Kanit, serif;
   scroll-behavior: smooth;
   scroll-snap-type: none;
+  ::selection{
+    background: theme("colors.morning");
+    color: theme("colors.fonts");
+  }
 }
 body::-webkit-scrollbar {
   display: none;

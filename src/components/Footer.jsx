@@ -27,7 +27,7 @@ export default function Footer() {
             </article>
 
             <div className="flex flex-col  gap-5 max-sm:gap-2  w-full mt-2 md:mt-10">
-              <div className="flex md:flex-col gap-1 md:gap-3 text-fonts max-sm:text-supcolor max-sm:font-kanit text-xs md:text-xl my-3 md:m-0">
+              <div className="flex flex-col gap-1 md:gap-3 text-fonts max-sm:text-supcolor max-sm:font-kanit text-xs md:text-xl my-3 md:m-0">
                 <h1 className="flex items-center">
                   <BsTelephone className=" mr-1 md:mr-5 w-4 md:w-5 h-4 md:h-5" />
                   +201066768790
@@ -87,7 +87,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="!flex justify-center">
+          <div className="flex justify-center mt-10">
             <Email />
           </div>
         </div>
