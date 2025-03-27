@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  block-size: 100%;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "Space Mono", Kanit, serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+main {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.over {
+  background: linear-gradient(90deg, theme("colors.primary") 60%, theme("colors.morning") 33%);
+}
+.over-mob {
+  background: linear-gradient(180deg, theme("colors.primary") 60%, theme("colors.morning") 33%);
+}
+.footer {
+  background: linear-gradient(180deg, theme("colors.primary") 45%, theme("colors.supcolor") 30%);
+}
+@media (max-width: 320px) {
+  .over {
+    background: linear-gradient(180deg, theme("colors.primary") 60%, theme("colors.morning") 33%);
+  }
+}
+@media (max-width: 640px) {
+  .over {
+    background: linear-gradient(180deg, theme("colors.primary") 60%, theme("colors.morning") 33%);
+  }
+}
+.link:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: theme("colors.primary");
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.link:hover,
+.link:hover > span {
+  color: #fff;
+}
+
+.link:hover:after {
+  width: 100%;
+}
+.swiper-pagination {
+  position: relative !important;
+  padding: 20px 0 5px;
+}
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  padding-top: 3px;
+  opacity: 1 !important;
+  background: white !important;
+  border: 1px solid theme("colors.primary") !important;
+  color: theme("colors.fonts");
+  font-weight: 600;
+  text-align: center;
+}
+.swiper-pagination-bullet-active {
+  background-color: theme("colors.primary") !important;
+  color: white;
+}
+
+.knowMe {
+  position: relative;
+  background-image: url(../../images/icon-dotted-map-2.png);
+}
+.knowMe::before {
+  content: "";
+  position: absolute;
+  right: -50px;
+  width: 100px;
+  height: calc(100% + 100px);
+  background-color: theme("colors.morning");
+  z-index: -1;
+}
+@media (width <=640px) {
+  .knowMe::before {
+    right: -30px;
+    height: 100vh;
+  }
+}
+@media (width <= 786px) {
+  .knowMe::before {
+    right: 0px;
+  }
+  .knowMe {
+    margin: 0 10px;
+  }
+}
