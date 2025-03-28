@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       {/* ROutes between pages*/}
-      <Routes basename="/atia">
+      <Routes >
         <Route path="/" element={<DefaultLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Works />} />
