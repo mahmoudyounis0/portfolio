@@ -60,12 +60,12 @@ const ProjectCard = ({ data, limit, starter }) => {
                 {item.name}
                 <span className="text-morning text-6xl ml-1 leading-[0]">.</span>
               </h5>
-              <p className="mb-3 font-medium h-[60px] text-gray-500">{item.description}</p>
+              <p className="mb-5 font-medium h-[60px] text-gray-500">{item.description}</p>
               <Link
                 to={item.link}
-                className="mt-5 flex items-center px-5 py-1 w-fit border-2 border-primary rounded-lg text-primary transition-all"
+                className="link relative mt-8 flex items-center px-5 py-1 w-fit border-2 border-primary rounded-lg text-primary transition-all"
               >
-                <span className="z-30 text-md tracking-wider font-semibold font-kanit">
+                <span className="z-30 text-md tracking-[0.25rem] font-semibold font-kanit">
                   DEMO
                 </span>
                 <FaArrowRightLong className="ml-2 z-30" />
