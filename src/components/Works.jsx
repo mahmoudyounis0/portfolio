@@ -37,11 +37,8 @@ export default function Works() {
           className="aspect-auto max-w-sm h-auto my-10"
           loading="lazy"
         />
-        <h1 className="text-primary font-semibold text-2xl tracking-[.25em]">
+        <h1 className="text-primary font-semibold text-[min(10vw,70px)] tracking-[.25em]">
         Coming Soon
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
         <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
         <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
         <span className="text-primary text-3xl ml-1 leading-[0]">.</span>

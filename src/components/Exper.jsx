@@ -26,7 +26,7 @@ export default function Experience() {
                 About me
               </h1>
               <p className="max-w-lg max-sm:text-xs">
-              I'm currently pursuing a Bachelor's degree in Computer Science, building a strong foundation in web development.I’m always learning and keeping up with the latest tools and trends to create modern, high quality solutions.I have a passion for coding and enjoy tackling challenges.I’m excited to apply my skills in real world projects and contribute to innovative solutions.I’m eager to learn, grow, and make a positive impact in the tech world.
+              I'm currently pursuing a Bachelor's degree in Computer Science, building a strong foundation in web development.I’m always learning and keeping up with the latest tools and trends to create modern, high quality solutions.I have a passion for coding and enjoy tackling challenges.
               </p>
             </div>
 

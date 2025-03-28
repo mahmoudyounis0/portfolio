@@ -46,26 +46,16 @@
         "name": "Tailwind",
         "icon": "RiTailwindCssFill",
         "percent": "99"
-    } ,{
+    } 
+  ,
+    {
         "id": 9,
-        "name": "HTML5",
-        "icon": "FaHtml5",
-        "percent": "100%"
-    },
-    {
-        "id": 10,
-        "name": "CSS3",
-        "icon": "FaCss3Alt",
-        "percent": "98%"
-    },
-    {
-        "id": 11,
         "name": "Sass",
         "icon": "FaSass",
         "percent": "85%"
     },
     {
-        "id": 12,
+        "id": 10,
         "name": "Bootstrap",
         "icon": "FaBootstrap",
         "percent": "95%"
