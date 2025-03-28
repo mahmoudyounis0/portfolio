@@ -63,7 +63,7 @@ const ProjectCard = ({ data, limit, starter }) => {
               <p className="mb-5 font-medium h-[60px] text-gray-500">{item.description}</p>
               <Link
                 to={item.link}
-                className="link relative mt-8 flex items-center px-5 py-1 w-fit border-2 border-primary rounded-lg text-primary transition-all"
+                className="link relative mt-10 flex items-center px-5 py-1 w-fit border-2 border-primary rounded-lg text-primary transition-all"
               >
                 <span className="z-30 text-md tracking-[0.25rem] font-semibold font-kanit">
                   DEMO
