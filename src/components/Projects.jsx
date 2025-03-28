@@ -8,23 +8,7 @@ import ProjectCard from "./atoms/ProjectCard";
 export default function Projects() {
   return (
     <main className="relative h-screen flex  flex-col justify-center items-center bg-supcolor z-50">
-      {/* <ProjectCard data={projects} limit={5} starter={2} showing={3} /> */}
-      <div className="mb-3">
-      <img
-          src="./images/course.png"
-          className="aspect-auto max-w-sm h-auto my-10"
-          loading="lazy"
-        />
-        <h1 className="text-primary font-semibold text-2xl tracking-[.25em]">
-        Coming Soon
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        </h1>
-      </div>
+     <ProjectCard data={projects} limit={5} starter={2} showing={3} />
       <Link
         to={"/projects"}
         className="link relative transition-all flex items-center text-fonts border-solid border-primary border-2 rounded-lg px-10 py-3 w-fit justify-center"

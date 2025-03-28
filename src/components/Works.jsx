@@ -11,7 +11,7 @@ export default function Works() {
       ? projects
       : projects.filter((item) => item.tech.includes(activeBtn));
   }, [activeBtn]);
-  const tech = ["react", "next","Html-Css-JS Only" , "all"];
+  const tech = ["React", "Next","Html-Css-JS Only" , "all"];
 
   return (
     <main className="relative h-screen flex  flex-col justify-center items-center bg-supcolor z-50">
@@ -30,20 +30,7 @@ export default function Works() {
         ))}
       </div>
       {filterData.length > 0 ? (
-        // <ProjectCard data={filterData} limit={0} starter={0} />
-        <>
-        <img
-          src="./images/course.png"
-          className="aspect-auto max-w-sm h-auto my-10"
-          loading="lazy"
-        />
-        <h1 className="text-primary font-semibold text-[min(10vw,70px)] tracking-[.25em]">
-        Coming Soon
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        <span className="text-primary text-3xl ml-1 leading-[0]">.</span>
-        </h1>
-      </>
+        <ProjectCard data={filterData} limit={0} starter={0} />
       ) : (
         <>
           <img
