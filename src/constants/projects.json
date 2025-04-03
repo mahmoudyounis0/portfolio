@@ -8,7 +8,14 @@
         "tech": [
           "React"
         ]
-      },  {
+      },   {
+        "imageUrl": "./images/youtube-clone.png",
+        "link": "https://youtube-cloneo.netlify.app/",
+        "name": "YouTube Clone",
+        "id": 9,
+        "description": "A Next.js-based YouTube clone featuring video playback, search, and a sleek UI.",
+        "tech": ["Next.js"]
+    },  {
         "imageUrl": "./images/astro-reach.png",
         "link": "https://astro-reach.netlify.app/",
         "name": "Astro Reach",
