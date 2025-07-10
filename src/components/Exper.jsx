@@ -31,7 +31,7 @@ export default function Experience() {
             </div>
 
             <Link
-              to="https://drive.google.com/file/d/13iAbkUlBgKkDiYxnK0pkjJ7UjKh8KX9x/view?usp=drive_linkx"
+              to="https://drive.google.com/file/d/1QVZCQBkPBpte-4A6gzzx4Rp81ri78A5u/view?usp=sharing"
               data-aos="fade-up"
               data-aos-duration="3000"
               target="_blank"
