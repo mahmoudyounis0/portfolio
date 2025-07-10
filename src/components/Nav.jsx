@@ -105,7 +105,7 @@ export default function Nav() {
 
                 <div className="absolute bottom-0 right-0 max-sm:bottom-[8%] w-full flex justify-center items-center gap-8 text-primary p-5">
                   <a
-                    href="https://www.linkedin.com/in/mahmoud-younis-93137b262/"
+                    href="https://www.linkedin.com/in/mahmoudyounis0"
                     target="_blank"
                   >
                     <FaLinkedin
