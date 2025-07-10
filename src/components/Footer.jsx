@@ -61,7 +61,7 @@ export default function Footer() {
                   <img src="/images/social media/insta.png" className="w-8" />
                 </Link>
                 <Link
-                  to="https://www.linkedin.com/in/mahmoud-younis-93137b262/"
+                  to="https://www.linkedin.com/in/mahmoudyounis0"
                   className="w-fit"
                   target="_blank"
                 >
