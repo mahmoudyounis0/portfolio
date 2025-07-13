@@ -15,14 +15,7 @@
         "id": 9,
         "description": "A Next.js-based YouTube clone featuring video playback, search, and a sleek UI.",
         "tech": ["Next.js"]
-    },  {
-        "imageUrl": "./images/astro-reach.png",
-        "link": "https://astro-reach.netlify.app/",
-        "name": "Astro Reach",
-        "id": 2,
-        "description": "A responsive marketing agency website with smooth navigation, animations.",
-        "tech": ["React"]
-      }, {
+    }, {
         "imageUrl": "./images/skyris-weather.png",
         "link": "https://mahmoudyounis0.github.io/Skyris-weather_api/",
         "name": "Skyris Weather API",
