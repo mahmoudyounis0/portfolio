@@ -1,0 +1,82 @@
+[
+  {
+    "imageUrl": "./images/batcart.png",
+    "link": "https://batcart.netlify.app/",
+    "name": "BatCart",
+    "id": 1,
+    "description": "A fully responsive e-commerce app with smooth browsing, profile management.",
+    "tech": ["React"]
+  },
+  {
+    "imageUrl": "./images/khsosy.png",
+    "link": "https://darskhsosy.vercel.app/",
+    "name": "khsosy Platform",
+    "id": 10,
+    "description": "A full-stack Learning Management System with course creation, video learning, and real-time progress tracking.",
+    "tech": [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "ShadCn",
+      "MongoDB",
+      "Tailwind",
+      "React Query"
+    ]
+  },
+  {
+    "imageUrl": "./images/youtube-clone.png",
+    "link": "https://youtube-cloneo.netlify.app/",
+    "name": "YouTube Clone",
+    "id": 9,
+    "description": "A Next.js-based YouTube clone featuring video playback, search, and a sleek UI.",
+    "tech": ["Next.js"]
+  },
+  {
+    "imageUrl": "./images/skyris-weather.png",
+    "link": "https://mahmoudyounis0.github.io/Skyris-weather_api/",
+    "name": "Skyris Weather API",
+    "id": 3,
+    "description": "A real-time weather app, supporting city search and location-based updates.",
+    "tech": ["Html-Css-JS Only"]
+  },
+  {
+    "imageUrl": "./images/game-app.png",
+    "link": "https://mahmoudyounis0.github.io/GameApp/",
+    "name": "Game App",
+    "id": 4,
+    "description": "A responsive web app for exploring free-to-play games with pagination and detailed game info.",
+    "tech": ["Html-Css-JS Only"]
+  },
+  {
+    "imageUrl": "./images/yummy.png",
+    "link": "https://mahmoudyounis0.github.io/Yummy-js-api/",
+    "name": "Yummy",
+    "id": 5,
+    "description": "A recipe finder app that lets users explore and search for global recipes with instructions.",
+    "tech": ["Html-Css-JS Only"]
+  },
+  {
+    "imageUrl": "./images/saveit.png",
+    "link": "https://mahmoudyounis0.github.io/newbookmark/",
+    "name": "SaveIt",
+    "id": 6,
+    "description": "A bookmarking tool for saving and organizing favorite websites with local storage support.",
+    "tech": ["Html-Css-JS Only"]
+  },
+  {
+    "imageUrl": "./images/kerri.png",
+    "link": "https://mahmoudyounis0.github.io/Kerri-BootSrtap/",
+    "name": "Kerri Bootstrap",
+    "id": 7,
+    "description": "A responsive Bootstrap Website with a modern design, animations, and a mobile-first approach.",
+    "tech": ["Html-Css-JS Only"]
+  },
+  {
+    "imageUrl": "./images/daniles.png",
+    "link": "https://mahmoudyounis0.github.io/Daniles-BootSrap-/",
+    "name": "Daniles Bootstrap",
+    "id": 8,
+    "description": "A responsive Bootstrap landing page with smooth animations and a sleek, modern UI.",
+    "tech": ["Html-Css-JS Only"]
+  }
+]
