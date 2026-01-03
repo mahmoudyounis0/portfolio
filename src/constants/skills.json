@@ -1,63 +1,62 @@
 [
-    {
-        "id": 1,
-        "name": "JavaScript",
-        "icon": "FaJs",
-        "percent": "70"
-    },
-    {
-        "id": 2,
-        "name": "React",
-        "icon": "FaReact",
-        "percent": "85"
-    },
-    {
-        "id": 3,
-        "name": "Next.js",
-        "icon": "SiNextdotjs",
-        "percent": "80"
-    },
-    {
-        "id": 4,
-        "name": "TypeScript",
-        "icon": "SiTypescript",
-        "percent": "75"
-    },
-    {
-        "id": 5,
-        "name": "Framer Motion",
-        "icon": "TbBrandFramerMotion",
-        "percent": "90"
-    },
-    {
-        "id": 6,
-        "name": "Git & GitHub",
-        "icon": "FaGitAlt",
-        "percent": "95"
-    },
-    {
-        "id": 7,
-        "name": "ShadCn",
-        "icon": "SiShadcnui",
-        "percent": "99"
-    },
-    {
-        "id": 8,
-        "name": "Tailwind",
-        "icon": "RiTailwindCssFill",
-        "percent": "99"
-    } 
-  ,
-    {
-        "id": 9,
-        "name": "Sass",
-        "icon": "FaSass",
-        "percent": "85%"
-    },
-    {
-        "id": 10,
-        "name": "Bootstrap",
-        "icon": "FaBootstrap",
-        "percent": "95%"
-    }
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "icon": "FaJs",
+    "percent": "90"
+  },
+  {
+    "id": 2,
+    "name": "React",
+    "icon": "FaReact",
+    "percent": "85"
+  },
+  {
+    "id": 3,
+    "name": "Next.js",
+    "icon": "SiNextdotjs",
+    "percent": "85"
+  },
+  {
+    "id": 4,
+    "name": "TypeScript",
+    "icon": "SiTypescript",
+    "percent": "90"
+  },
+  {
+    "id": 5,
+    "name": "Framer Motion",
+    "icon": "TbBrandFramerMotion",
+    "percent": "85"
+  },
+  {
+    "id": 6,
+    "name": "Node.js",
+    "icon": "DiNodejs",
+    "percent": "90"
+  },
+  {
+    "id": 7,
+    "name": "ShadCn",
+    "icon": "SiShadcnui",
+    "percent": "95"
+  },
+  {
+    "id": 8,
+    "name": "Tailwind",
+    "icon": "RiTailwindCssFill",
+    "percent": "95"
+  },
+  {
+    "id": 9,
+    "name": "Express.js",
+    "icon": "SiExpress",
+    "percent": "85"
+  },
+  {
+    "id": 10,
+    "name": "MongoDB",
+    "icon": "SiMongodb",
+    "percent": "85"
+  }
 ]

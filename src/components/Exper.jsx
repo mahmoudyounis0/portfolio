@@ -26,12 +26,12 @@ export default function Experience() {
                 About me
               </h1>
               <p className="max-w-lg max-sm:text-xs">
-              I'm currently pursuing a Bachelor's degree in Computer Science, building a strong foundation in web development.I’m always learning and keeping up with the latest tools and trends to create modern, high quality solutions.I have a passion for coding and enjoy tackling challenges.
+                I have completed my Bachelor's degree in Computer Science, building a strong foundation in software development. I’m always learning and keeping up with the latest tools and trends to create modern, high-quality solutions. I have a passion for coding and enjoy tackling challenges.
               </p>
             </div>
 
             <Link
-              to="https://drive.google.com/file/d/15fVj7HBvem9RjltkMYchK8b-VAcJkLwa/view?usp=sharing"
+              to="https://drive.google.com/file/d/13la39KO3387LRhxXo_tyIayhLo-L92nQ/view?usp=sharing"
               data-aos="fade-up"
               data-aos-duration="3000"
               target="_blank"

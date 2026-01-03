@@ -16,8 +16,9 @@ export default function Script() {
             className="text-fonts lg:text-base md:text-xs max-sm:text-sm  lg:max-w-lg md:max-w-sm"
             data-aos="fade-up"
           >
-          I’m not your typical designer tweaking pixels in Illustrator—I design through code. You’ll find me deep in stylesheets, refining layouts, adjusting font sizes, and crafting seamless user experiences with style.
-          </p>
+            I’m not your typical designer tweaking pixels—I design through code.
+            You’ll find me deep in stylesheets, refining layouts, adjusting font sizes,
+            and crafting seamless user experiences with style.          </p>
         </article>
         <div className="lg:block md:block max-sm:hidden ">
           <svg
@@ -75,7 +76,10 @@ export default function Script() {
             className="text-fonts lg:text-base md:text-xs max-sm:text-sm lg:max-w-lg md:max-w-sm"
             data-aos="fade-up"
           >
-            When building JavaScript applications, I use the right tools—but I’m not reliant on them. I focus on delivering fast, resilient, and scalable solutions where performance is always a priority.
+            I enjoy crafting sleek, engaging, and scalable full-stack experiences
+            that are both beautiful and effortless to use. I focus on delivering
+            fast, resilient, and scalable solutions where performance is always a priority,
+            using the right tools without being dependent on them.
           </p>
         </article>
       </div>

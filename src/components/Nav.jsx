@@ -120,7 +120,7 @@ export default function Nav() {
                     />
                   </a>
                   <a
-                    href="https://www.instagram.com/younis_x03/"
+                    href="https://www.instagram.com/_younisssssssssss/"
                     target="_blank"
                   >
                     <FaInstagram

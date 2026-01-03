@@ -10,19 +10,19 @@ function Info() {
       >
         <div className="flex flex-col justify-between items-start">
           <h1 className="text-morning lg:text-7xl md:text-5xl max-sm:text-4xl font-kanit font-bold leading-tight">
-            Frontend Developer
+            Full Stack Developer
             <span className="text-white font-mono ">.</span>
           </h1>
           <p className="text-white my-3 lg:text-xl sm:text-base font-mono">
-          I enjoy crafting sleek, engaging, and scalable front-end experiences that are both beautiful and effortless to use
+            I enjoy crafting sleek, engaging, and scalable full-stack experiences that are both beautiful and effortless to use.
           </p>
         </div>
         <div className="max-sm:hidden md:flex justify-between items-center lg:gap-10 md:gap-10 max-sm:gap-3  lg:text-sm md:text-sm max-sm:text-xs  text-morning lg:mt-20 md:mt-20 max-sm:mt-0 w-full ">
           <p className="lg:max-w-xs md:max-w-xs max-sm:w-full  text-xs">
-          Skilled in progressive enhancement, design systems, and intuitive UI engineering to create seamless user experiences.
+            Skilled in progressive enhancement, design systems, and intuitive engineering to create seamless user experiences.
           </p>
           <p className="lg:max-w-sm md:max-w-sm max-sm:w-full text-xs">
-          Experienced in delivering impactful products for clients.
+            Experienced in delivering impactful products for clients.
           </p>
         </div>
       </article>

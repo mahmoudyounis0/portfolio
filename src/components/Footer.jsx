@@ -54,7 +54,7 @@ export default function Footer() {
                   />
                 </Link>
                 <Link
-                  to="https://www.instagram.com/younis_x03/"
+                  to="https://www.instagram.com/_younisssssssssss/"
                   className="w-fit"
                   target="_blank"
                 >
