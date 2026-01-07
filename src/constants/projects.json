@@ -12,7 +12,7 @@
     "link": "https://darskhsosy.vercel.app/",
     "name": "khsosy Platform",
     "id": 10,
-    "description": "A full-stack Learning Management System with course creation, video learning, and real-time progress tracking.",
+    "description": "A full-stack Learning Management System.",
     "tech": [
       "Next.js",
       "Node.js",
