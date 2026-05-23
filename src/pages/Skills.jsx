@@ -19,12 +19,12 @@ export default function Skills() {
   };
 
   return (
-    <main className="over h-screen flex justify-center items-center mb-25">
+    <main className="over min-h-screen flex justify-center items-center mb-25">
 
-      {/* ── LARGE SCREENS: original layout ── */}
+      {/* 👇 LARGE SCREENS: original layout 👇 */}
       <section className="hidden lg:block container mx-auto bg-supcolor p-5 max-h-[90%] rounded-xl lg:w-4/6">
         <div className="flex justify-center items-center pb-3">
-          <h1 className="text-4xl font-mono text-primary font-bold mt-2">Skills</h1>
+          <h1 className="text-[clamp(1.5rem,4vw,2.25rem)] font-mono text-primary font-bold mt-2">Skills</h1>
         </div>
         <div className="flex items-center justify-center">
           <section className="p-2 w-full" data-aos="fade-up" data-aos-duration="1000">
@@ -51,10 +51,10 @@ export default function Skills() {
         </div>
       </section>
 
-      {/* ── SMALL / TABLET SCREENS: Swiper carousel, full width ── */}
+      {/* 👇 SMALL / TABLET SCREENS: Swiper carousel, full width 👇 */}
       <section className="lg:hidden w-full bg-supcolor py-5 p-20 max-sm:pt-2 min-h-1/3 max-h-[40%] ">
         <div className="flex justify-center items-center pb-3 max-sm:pb-1">
-          <h1 className="text-4xl max-sm:text-2xl font-mono text-primary  font-bold mt-2">
+          <h1 className="text-[clamp(1.25rem,4vw,2.25rem)] font-mono text-primary  font-bold mt-2">
             Skills
           </h1>
         </div>

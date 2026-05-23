@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-22T00:00:00.000Z",
+  "title": "Design System: The Field Notebook",
+  "extensions": {
+    "colorMeta": {
+      "deep-violet": { "role": "primary", "displayName": "Deep Violet", "canonical": "oklch(42% 0.19 285)", "tonalRamp": ["oklch(15% 0.19 285)", "oklch(26% 0.19 285)", "oklch(36% 0.19 285)", "oklch(42% 0.19 285)", "oklch(55% 0.14 285)", "oklch(68% 0.10 285)", "oklch(80% 0.06 285)", "oklch(93% 0.03 285)"] },
+      "chartreuse-mist": { "role": "accent", "displayName": "Chartreuse Mist", "canonical": "oklch(91% 0.21 120)", "tonalRamp": ["oklch(30% 0.21 120)", "oklch(45% 0.21 120)", "oklch(60% 0.21 120)", "oklch(75% 0.21 120)", "oklch(83% 0.21 120)", "oklch(91% 0.21 120)", "oklch(94% 0.12 120)", "oklch(97% 0.06 120)"] },
+      "ink": { "role": "text", "displayName": "Ink", "canonical": "oklch(25% 0.08 285)", "tonalRamp": ["oklch(10% 0.08 285)", "oklch(18% 0.08 285)", "oklch(25% 0.08 285)", "oklch(35% 0.06 285)", "oklch(50% 0.04 285)", "oklch(65% 0.03 285)", "oklch(80% 0.02 285)", "oklch(93% 0.01 285)"] },
+      "paper": { "role": "surface", "displayName": "Paper", "canonical": "oklch(97.5% 0.003 85)", "tonalRamp": [] },
+      "canvas": { "role": "surface-alt", "displayName": "Canvas", "canonical": "oklch(96.5% 0.006 285)", "tonalRamp": [] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headlines and major section headers. Kanit 700, oversized." },
+      "body": { "displayName": "Body", "purpose": "All running text. Space Mono, technical tone." }
+    },
+    "shadows": [
+      { "name": "card", "value": "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)", "purpose": "Project cards in Swiper carousel and mobile skill cards." }
+    ],
+    "motion": [
+      { "name": "ease-fill", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Button hover fill animation, 350ms." },
+      { "name": "ease-drawer", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Navigation drawer slide, 300ms." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "320px" },
+      { "name": "tablet", "value": "768px" },
+      { "name": "laptop", "value": "1025px" },
+      { "name": "desktop", "value": "1279px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Bordered outline button that fills with Deep Violet on hover. Used for CTAs, demo links, download CV.",
+      "html": "<button class=\"ds-btn-primary\">DEMO</button>",
+      "css": ".ds-btn-primary { position: relative; display: inline-flex; align-items: center; gap: 8px; padding: 8px 24px; border: 2px solid #4831d4; border-radius: 8px; background: transparent; color: #3d155f; font-family: 'Space Mono', monospace; font-size: 14px; letter-spacing: 0.25rem; font-weight: 600; text-transform: uppercase; cursor: pointer; transition: color 0.35s cubic-bezier(0.4,0,0.2,1); overflow: hidden; } .ds-btn-primary::after { content: ''; position: absolute; top: 0; left: 0; width: 0; height: 100%; background: #4831d4; transition: width 0.35s cubic-bezier(0.4,0,0.2,1); border-radius: 4px; z-index: 0; } .ds-btn-primary:hover { color: #fff; } .ds-btn-primary:hover::after { width: 100%; } .ds-btn-primary > span { position: relative; z-index: 1; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Bordered input with inset icon support. Used in contact form.",
+      "html": "<div class=\"ds-input-wrap\"><svg class=\"ds-input-icon\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"2\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"/><polyline points=\"22,6 12,13 2,6\"/></svg><input class=\"ds-input\" type=\"email\" placeholder=\"Enter your email\" /></div>",
+      "css": ".ds-input-wrap { position: relative; display: flex; align-items: center; } .ds-input-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); border-right: 2px solid #E5E7EB; padding-right: 8px; height: 100%; } .ds-input { width: 100%; padding: 8px 16px 8px 44px; border: 1px solid #D1D5DB; border-radius: 6px; background: #fff; color: #3d155f; font-family: 'Space Mono', monospace; font-size: 14px; outline: none; } .ds-input:focus { border-color: #4831d4; box-shadow: 0 0 0 2px rgba(72,49,212,0.15); } .ds-input::placeholder { color: #9CA3AF; }"
+    },
+    {
+      "name": "Navigation Drawer",
+      "kind": "nav",
+      "refersTo": "nav-drawer",
+      "description": "Slide-in drawer from left edge with menu links and social icons.",
+      "html": "<nav class=\"ds-nav-drawer\"><ul class=\"ds-nav-links\"><li><a href=\"#\">Projects</a></li><li><a href=\"#\">Say Hello</a></li><li><a href=\"#\">Mahmoud Younis</a></li></ul><div class=\"ds-nav-social\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"#4831d4\"><path d=\"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z\"/></svg></div></nav>",
+      "css": ".ds-nav-drawer { position: fixed; left: 0; top: 0; height: 100vh; width: 384px; background: #fff; box-shadow: 4px 0 24px rgba(0,0,0,0.15); padding: 24px; z-index: 50; font-family: 'Space Mono', monospace; } .ds-nav-links { list-style: none; padding: 80px 0 0; margin: 0; } .ds-nav-links li { padding: 16px 40px; transition: transform 0.2s; } .ds-nav-links li:hover { transform: translateX(8px); } .ds-nav-links a { color: #4831d4; text-decoration: none; font-size: 24px; font-weight: 500; } .ds-nav-social { position: absolute; bottom: 24px; right: 24px; display: flex; gap: 16px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card-project",
+      "description": "Swiper coverflow card with image, title, description, and demo button.",
+      "html": "<div class=\"ds-card-project\"><div class=\"ds-card-image\"></div><div class=\"ds-card-content\"><h5 class=\"ds-card-title\">Project Name<span class=\"ds-card-dot\">.</span></h5><p class=\"ds-card-desc\">Short project description goes here.</p><button class=\"ds-btn-primary\" style=\"margin-top: 24px;\"><span>DEMO</span></button></div></div>",
+      "css": ".ds-card-project { max-width: 384px; background: #F9F9F9; border: 2px solid #4831d4; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); } .ds-card-image { width: 100%; height: 200px; background: #E5E7EB; border-bottom: 2px solid #4831d4; } .ds-card-content { padding: 20px; } .ds-card-title { font-family: 'Kanit', sans-serif; font-size: 24px; font-weight: 700; text-transform: uppercase; color: #4831d4; margin: 0 0 8px; } .ds-card-dot { color: #ccf381; font-size: 60px; line-height: 0; margin-left: 4px; } .ds-card-desc { font-family: 'Space Mono', monospace; font-size: 14px; color: #6B7280; margin: 0; line-height: 1.5; }"
+    },
+    {
+      "name": "Tech Tag / Chip",
+      "kind": "chip",
+      "refersTo": "chip-tag",
+      "description": "Pill-shaped bordered tag for technology labels and date badges.",
+      "html": "<span class=\"ds-chip\">Next.js</span>",
+      "css": ".ds-chip { display: inline-block; padding: 2px 8px; border: 1px solid #4831d4; border-radius: 9999px; background: transparent; color: #3d155f; font-family: 'Space Mono', monospace; font-size: 12px; opacity: 0.7; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Notebook",
+    "overview": "A developer portfolio that reads like a field notebook: technical observations in monospace, punctuated by moments of deliberate color. The interface doesn't shout for attention, it earns it through structure. Deep violet backgrounds anchor the space while chartreuse mist accents arrive like margin highlights in a well-kept journal.\n\nEvery section is a discrete entry: full-screen, scroll-snapped, with its own rhythm. The split-color backgrounds (violet meets chartreuse) create a recurring visual signature without relying on cards or containers. Typography does the hierarchy work; color provides the emotional arc.",
+    "keyCharacteristics": [
+      "Full-screen scroll-snapped sections, each a distinct chapter",
+      "Split-tone backgrounds (violet / chartreuse) as the unifying motif",
+      "Monospace body carries technical credibility",
+      "Bordered interactive elements with hover-fill reveals",
+      "Generous whitespace and oversized typography for impact",
+      "Decorative SVG dot patterns as the only ornamentation"
+    ],
+    "rules": [
+      { "name": "The Split-Tone Rule", "body": "Every hero-scale section uses a two-color background split (60/33 by default). Deep Violet dominates; Chartreuse Mist occupies the remaining strip. The split direction swaps from horizontal (desktop) to vertical (mobile). This is the system's signature gesture.", "section": "colors" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. Shadows appear only as a response to interaction (hover on the link button class) or as a carousel affordance (Swiper slides). If a static section has a shadow, remove it.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use the split-tone background (Deep Violet / Chartreuse Mist) as the primary visual signature on hero-scale sections.",
+      "Do keep body text in Space Mono to maintain technical credibility.",
+      "Do use Deep Violet as the sole interactive color for borders, hover fills, and active states.",
+      "Do let sections be full-screen and scroll-snapped; each is a chapter.",
+      "Do use decorative SVG dot patterns as the only non-functional ornament."
+    ],
+    "donts": [
+      "Don't use pure black (#000) or pure white (#fff) as background colors. Always tint: Deep Violet for color, Paper for white, Ink for black.",
+      "Don't use gradient text, glassmorphism, or side-stripe borders.",
+      "Don't add shadows to static sections. Flat by default.",
+      "Don't wrap content in unnecessary containers. Most sections don't need one.",
+      "Don't use cards as a lazy layout default. The project card carousel is the only place cards belong.",
+      "Don't use em dashes in copy. Use commas, colons, or periods instead."
+    ]
+  }
+}

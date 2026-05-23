@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState, useMemo } from "react";
 import projects from "../constants/projects.json";
 import { Link } from "react-router-dom";
 import ProjectCard from "./atoms/ProjectCard";
@@ -9,24 +9,27 @@ export default function Works() {
   const tech = ["React", "Next", "Html-Css-JS Only", "all"];
 
   // Sort projects (React projects first)
-  const sortedProjects = [...projects].sort((a, b) => {
-    return a.tech.includes("React") ? -1 : 1;
-  });
+  const sortedProjects = useMemo(() => {
+    return [...projects].sort((a, b) => {
+      return a.tech.includes("React") ? -1 : 1;
+    });
+  }, []);
 
-  const filteredProjects =
-    activeBtn === "all"
+  const filteredProjects = useMemo(() => {
+    return activeBtn === "all"
       ? sortedProjects
       : sortedProjects.filter((item) => item.tech.includes(activeBtn));
+  }, [activeBtn, sortedProjects]);
 
   return (
-    <main className="relative h-screen flex flex-col justify-center items-center bg-supcolor z-50">
+    <main className="relative min-h-screen flex flex-col justify-center items-center bg-supcolor z-50">
       {/* Filter Buttons */}
       <div className="flex mb-10 shadow-xl border-primary border-2 rounded-lg bg-white relative z-10">
         {tech.map((el, index) => (
           <button
             key={index}
-            // onClick={() => setActiveBtn(el)}
-            className={`md:px-6 px-2 py-2 border-r-2 last-of-type:border-none border-gray-300 capitalize transition-all duration-300 ${
+            onClick={() => setActiveBtn(el)}
+            className={`md:px-6 px-3 py-3 border-r-2 last-of-type:border-none border-gray-300 capitalize transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary ${
               activeBtn === el ? "bg-primary text-white " : ""
             }`}
           >

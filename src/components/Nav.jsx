@@ -46,6 +46,8 @@ export default function Nav() {
             <button
               className="p-2 text-light rounded outline-none"
               onClick={toggleMenu}
+              aria-label="Toggle menu"
+              aria-expanded={navbar}
             >
               {navbar ? (
                 <MdClose
@@ -77,19 +79,22 @@ export default function Nav() {
                 initial={{ x: "-100%", opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: "-100%", opacity: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 className="max-sm:h-screen fixed left-0 top-0 h-full w-96 max-sm:w-full bg-white shadow-lg p-6 z-40"
               >
                 <ul className="pt-20 max-sm:pt-5 relative max-sm:top-[20%] text-2xl font-mono font-medium text-primary">
                   <li className="transition-all hover:translate-x-2 py-6 px-10">
-                    <Link to="/projects">Projects</Link>
+                    <Link to="/projects" onClick={toggleMenu}>Projects</Link>
                   </li>
                   <hr className="mx-5" />
                   <li className="py-6 px-10 text-gray-400">
                     <a href="#">Say Hello</a>
                   </li>
                   <li className="transition-all hover:translate-x-2 px-10 py-4">
-                    <a href={`https://wa.me/${phoneNumber}`} target="_blank">
+                    <a href={`mailto:mahmoudyounis5761@gmail.com`} onClick={toggleMenu}>Email Me</a>
+                  </li>
+                  <li className="transition-all hover:translate-x-2 px-10 py-4">
+                    <a href={`https://wa.me/${phoneNumber}`} target="_blank" onClick={toggleMenu}>
                       Mahmoud Younis
                     </a>
                   </li>
@@ -97,6 +102,7 @@ export default function Nav() {
                     <a
                       href="https://www.paypal.com/paypalme/MYounis2211/"
                       target="_blank"
+                      onClick={toggleMenu}
                     >
                       Connect a Wallet
                     </a>

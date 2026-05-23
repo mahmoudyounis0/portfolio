@@ -12,12 +12,12 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <main className="h-screen footer flex justify-center max-sm:justify-between flex-col items-center gap-10 max-sm:gap-0 w-full font-mono pt-20 max-sm:pt-6 overflow-hidden">
+    <main className="min-h-screen footer flex justify-center max-sm:justify-between flex-col items-center gap-10 max-sm:gap-0 w-full font-mono pt-20 max-sm:pt-6 overflow-hidden">
       <section className="container mx-auto w-full flex max-sm:flex-col: justify-center items-center">
         <div className="  grid sm:grid-cols-1 md:grid-cols-2  gap-5">
           <div className="flex flex-col items-center justify-between ml-2 md:ml-20">
             <article className="flex flex-col justify-center w-full">
-              <h1 className="font-kanit font-semibold text-morning text-3xl md:text-5xl tracking-tight mb-2 md:mb-5">
+              <h1 className="font-kanit font-semibold text-morning text-[clamp(1.875rem,4vw,3rem)] tracking-tight mb-2 md:mb-5">
                 Get In Touch
               </h1>
               <p className="text-supcolor max-w-md max-sm:text-xs">
@@ -47,54 +47,61 @@ export default function Footer() {
                   to="https://www.facebook.com/profile.php?id=100013316409279"
                   className="w-fit"
                   target="_blank"
+                  aria-label="Facebook"
                 >
                   <img
                     src="/images/social media/facebook.png"
-                    className="w-8"
+                    alt="Facebook"
+                    className="w-10"
                   />
                 </Link>
                 <Link
                   to="https://www.instagram.com/_younisssssssssss/"
                   className="w-fit"
                   target="_blank"
+                  aria-label="Instagram"
                 >
-                  <img src="/images/social media/insta.png" className="w-8" />
+                  <img src="/images/social media/insta.png" alt="Instagram" className="w-10" />
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/mahmoudyounis0"
                   className="w-fit"
                   target="_blank"
+                  aria-label="LinkedIn"
                 >
                   <img
                     src="/images/social media/linkedin.png"
-                    className="w-8"
+                    alt="LinkedIn"
+                    className="w-10"
                   />
                 </Link>
                 <Link
                   to="https://github.com/mahmoudyounis0"
                   target="_blank"
                   className="w-fit"
+                  aria-label="GitHub"
                 >
-                  <FaGithub size={30} />
+                  <FaGithub size={36} />
                 </Link>
                 <Link
                   to="https://x.com/Mahmoud22103?t=lkiaQnzQo4JBrSL6bqTjzg&s=09"
                   target="_blank"
                   className="w-fit"
+                  aria-label="X (Twitter)"
                 >
-                  <FaSquareXTwitter size={30} />
+                  <FaSquareXTwitter size={36} />
                 </Link>
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-10 w-full max-w-md">
             <Email />
           </div>
         </div>
       </section>
       <section className="border-t  border-gray-300 flex justify-center relative w-full">
         <div className="container mx-auto pt-4 flex items-center justify-center max-sm:text-xs w-full py-3 ">
-          <p><span className="text-primary font-bold hover:text-[#5a62dd]"> Mahmoud Younis</span>. All rights reserved &copy;{new Date().getFullYear()}</p>
+          <p><span className="text-primary font-bold"> Mahmoud Younis</span>. All rights reserved &copy;{new Date().getFullYear()}</p>
           <Link onClick={scrollTop} className="w-fit absolute right-0">
             <FaArrowAltCircleUp className="w-10 h-10 max-sm:w-9 p-2 text-primary mr-0 md:mr-10" />
           </Link>

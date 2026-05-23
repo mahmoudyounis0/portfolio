@@ -1,33 +1,79 @@
 
+import React from "react";
+import { motion } from "framer-motion";
+
+const easeExpoOut = [0.16, 1, 0.3, 1];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const textVariants = {
+  hidden: { opacity: 0, y: 30, filter: "blur(4px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.8, ease: easeExpoOut },
+  },
+};
+
 function Info() {
   return (
-    <section className="container mx-auto flex lg:flex-row md:flex-row max-sm:flex-col justify-around gap-10 items-center lg:my-10 md:my-10 max-sm:my-10 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 overflow-hidden">
-      <article
-        className="lg:max-w-md md:max-w-sm flex flex-col justify-between items-center lg:px-0 md:px-2 max-sm:px-10 "
-        data-aos="flip-left"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
-      >
-        <div className="flex flex-col justify-between items-start">
-          <h1 className="text-morning lg:text-7xl md:text-5xl max-sm:text-4xl font-kanit font-bold leading-tight">
-            Full Stack Developer
-            <span className="text-white font-mono ">.</span>
-          </h1>
-          <p className="text-white my-3 lg:text-xl sm:text-base font-mono">
-            Building scalable SaaS platforms, real-time voice systems, and AI-powered web applications — from clean backend architecture to polished user interfaces.
-          </p>
+    <motion.section 
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="container mx-auto flex lg:flex-row md:flex-row max-sm:flex-col justify-around gap-10 items-center lg:my-10 md:my-10 max-sm:my-10 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 overflow-hidden"
+    >
+      <article className="lg:max-w-md md:max-w-sm flex flex-col justify-between items-center lg:px-0 md:px-2 max-sm:px-10 z-20">
+        <div className="flex flex-col justify-between items-start w-full">
+          <motion.div className="overflow-hidden">
+            <motion.h1 
+              variants={textVariants}
+              className="text-morning text-[clamp(2.25rem,7vw,4.5rem)] font-kanit font-bold leading-tight"
+            >
+              Full Stack
+              <br />
+              Developer<span className="text-white font-mono">.</span>
+            </motion.h1>
+          </motion.div>
+          
+          <motion.p 
+            variants={textVariants}
+            className="text-white my-4 text-[clamp(0.875rem,1.5vw,1.1rem)] font-mono leading-relaxed"
+          >
+            Building scalable SaaS platforms, real-time voice systems, and AI-powered web applications: from clean backend architecture to polished user interfaces.
+          </motion.p>
         </div>
-        <div className="max-sm:hidden md:flex justify-between items-center lg:gap-10 md:gap-10 max-sm:gap-3  lg:text-sm md:text-sm max-sm:text-xs  text-morning lg:mt-20 md:mt-20 max-sm:mt-0 w-full ">
-          <p className="lg:max-w-xs md:max-w-xs max-sm:w-full  text-xs">
+        
+        <motion.div 
+          variants={textVariants}
+          className="max-sm:hidden md:flex justify-between items-center lg:gap-10 md:gap-10 max-sm:gap-3 text-[clamp(0.625rem,1.2vw,0.875rem)] text-morning lg:mt-16 md:mt-16 max-sm:mt-0 w-full pt-6 border-t border-morning/20"
+        >
+          <p className="lg:max-w-xs md:max-w-xs max-sm:w-full text-xs opacity-90">
            Focused on clean architecture, RBAC systems, and backend services that scale.
           </p>
-          <p className="lg:max-w-sm lg:min-w-[150px] md:max-w-sm max-sm:w-full text-xs">
-            From UI to API.
+          <p className="lg:max-w-sm lg:min-w-[150px] md:max-w-sm max-sm:w-full text-xs opacity-90 font-bold uppercase tracking-widest text-right">
+            From UI to API
           </p>
-        </div>
+        </motion.div>
       </article>
+
       <div className="relative lg:flex md:flex lg:mr-20 md:mr-0 mb-10 ">
-        <div className="absolute z-10 lg:-right-9 md:right-3 lg:bottom-0 md:-bottom-11 max-sm:-left-32 max-sm:-top-2 opacity-100">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, ease: easeExpoOut, delay: 0.4 }}
+          className="absolute z-10 lg:-right-9 md:right-3 lg:bottom-0 md:-bottom-11 max-sm:-left-32 max-sm:-top-2 opacity-100 pointer-events-none"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="lg:w-[600px] lg:h-[400px] max-sm:w-96 md:w-96 md:h-96 "
@@ -67,17 +113,22 @@ function Info() {
               d="M2.114 541.705v0l-.56 22.258v0l22.258-.561v0l-.56 22.259v0l22.258-.56v0l-.56 22.258v0l22.258-.56v0l-.559 22.26v0l22.26-.56v0"
             ></path>
           </svg>
-        </div>
+        </motion.div>
         <div className="absolute lg:top-16 right-0 md:right-9 max-sm:right-7 md:top-5 max-sm:top-8 lg:w-72 md:w-60 max-sm:w-56 lg:h-96 md:h-80 max-sm:h-60"></div>
-        <div className=" w-72 lg:w-80 max-md:w-60 max-sm:w-48 relative z-20 mr-20 max-sm:mr-0 object-fill">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95, filter: "blur(4px)" }}
+          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+          transition={{ duration: 1, ease: easeExpoOut, delay: 0.3 }}
+          className=" w-72 lg:w-80 max-md:w-60 max-sm:w-48 relative z-20 mr-20 max-sm:mr-0 object-fill"
+        >
           <img
             src="/images/anime-removebg.png"
             alt="Mahmoud Younis"
-            className="aspect-auto rounded-lg "
+            className="aspect-auto rounded-lg"
           />
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 export default Info;

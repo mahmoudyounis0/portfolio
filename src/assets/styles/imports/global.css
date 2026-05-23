@@ -4,6 +4,12 @@
 * {
   box-sizing: border-box;
 }
+.dot-grid {
+  background-image: radial-gradient(circle, theme("colors.primary") 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  width: 200px;
+  height: 200px;
+}
 
 html,
 body,
@@ -17,7 +23,7 @@ body {
   position: relative;
   font-family: "Space Mono", Kanit, serif;
   scroll-behavior: smooth;
-  scroll-snap-type: none;
+  scroll-snap-type: y mandatory;
   ::selection{
     background: theme("colors.morning");
     color: theme("colors.fonts");
@@ -25,10 +31,6 @@ body {
 }
 body::-webkit-scrollbar {
   display: none;
-}
-
-html {
-  scroll-snap-type: y mandatory;
 }
 
 main {
@@ -63,12 +65,12 @@ main {
   height: 100%;
   background: theme("colors.primary");
   transition: all 0.35s;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .link:hover,
 .link:hover > span {
-  color: #fff;
+  color: theme("colors.white");
 }
 
 .link:hover:after {
@@ -83,7 +85,7 @@ main {
   height: 8px !important;
   padding-top: 3px;
   opacity: 1 !important;
-  background: white !important;
+  background: theme("colors.supcolor") !important;
   border: 1px solid theme("colors.primary") !important;
   color: theme("colors.fonts");
   font-weight: 600;
@@ -91,7 +93,7 @@ main {
 }
 .swiper-pagination-bullet-active {
   background-color: theme("colors.primary") !important;
-  color: white;
+  color: theme("colors.supcolor");
 }
 
 .knowMe {
